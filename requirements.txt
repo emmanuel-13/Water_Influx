@@ -5,3 +5,4 @@ joblib
 xgboost
 scikit-learn
 streamlit_option_menu
+social_media
