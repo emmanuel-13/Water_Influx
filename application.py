@@ -525,7 +525,7 @@ def main():
             my_new = pd.DataFrame({"Water Influx Constant": round(int(b), 2), "Pressure Drop": round(int(p),2),  "Dimensionless Water inFlux": int(wed)}, index=[0])
             st.table(my_new)
             
-            we = round(int(b),2) * round(int(p),2) * round(int(wed),2)
+            we = round(b,2) * round(p,2) * round(wed,2)
             st.markdown(
                 f"""
                     <div style='text-align: center'>
@@ -539,7 +539,7 @@ def main():
             my_new = pd.DataFrame({"Total Compressibility": round(int(c),2), "Aquaver Radius":  round(int(r),2), "Pressure Drop": round(int(p),2), "Reservior Value": f"{data} degrees", "Dimensionless Water inFlux": round(int(wed),2)}, index=[0])
             st.table(my_new)
             
-            we =  int(new_b) * round(int(p),2) * round(int(wed),2)
+            we =  int(new_b) * round(p,2) * round(wed,2)
             st.markdown(
                 f"""
                     <div style='text-align: center'>
